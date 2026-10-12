@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>W.O.P.R.</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23020803'/%3E%3Crect x='3' y='4' width='7' height='2' fill='%233dff7a'/%3E%3Crect x='3' y='9' width='4' height='3' fill='%233dff7a'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/crt.css">
+</head>
+<body>
+  <div id="crt" class="crt off">
+    <div id="screen">
+      <div id="board" aria-hidden="true">
+        <canvas id="map"></canvas>
+        <div id="hud">
+          <div class="hud-top">
+            <span id="hud-title"></span>
+            <span id="hud-clock"></span>
+            <span id="hud-defcon"></span>
+          </div>
+          <div id="hud-big"></div>
+          <div class="hud-bottom">
+            <span id="hud-a"></span>
+            <span id="hud-b"></span>
+          </div>
+        </div>
+      </div>
+      <div id="term">
+        <div id="output" aria-live="polite"></div>
+        <div id="inputline"><span id="typed"></span><span id="cursor"></span></div>
+      </div>
+    </div>
+    <div class="scanlines"></div>
+    <div class="flicker"></div>
+    <div class="vignette"></div>
+    <div id="flash"></div>
+  </div>
+
+  <input id="kbd" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Terminal input">
+
+  <div id="power">
+    <button id="power-btn" type="button">
+      <span class="led"></span>
+      <span>POWER</span>
+    </button>
+    <p>Sound &amp; voice recommended. Press any key or click to switch on.</p>
+  </div>
+
+  <script src="vendor/d3.min.js"></script>
+  <script src="vendor/topojson-client.min.js"></script>
+  <script src="vendor/world-110m.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/board.js"></script>
+  <script src="js/war.js"></script>
+  <script src="js/tictactoe.js"></script>
+  <script src="js/joshua.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+.DS_Store
+.claude-screenshots/
+.playwright-mcp/
+node_modules/
